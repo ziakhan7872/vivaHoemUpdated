@@ -157,6 +157,7 @@ export default function MainTab() {
 		<Stack2.Screen name="ReplayTemps" component={ReplayTemps} options={{headerShown:false}}/>
 		<Stack2.Screen name="Categories" component={Categories}  options={{headerShown:false}}/>
 		<Stack2.Screen name="New Templates" component={NewTemplates}/>
+		<Stack2.Screen name="VacationMode" component={VacationMode}/>
 		<Stack2.Screen name="Edit Screen" component={newTemplatesEditScreen} options={{headerShown:false}}/>
 		<Stack2.Screen name="AddRev" component={AddReview} options={{
 			title: 'Request a Review'

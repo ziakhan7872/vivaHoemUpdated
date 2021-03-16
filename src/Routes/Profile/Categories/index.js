@@ -1,40 +1,33 @@
+import styles from "./styles";
 import React, { Component } from 'react';
-import { Text, View, ScrollView, Dimensions, ImageBackground, StyleSheet, Image , StatusBar} from 'react-native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
-const Width = Dimensions.get('screen').width;
-const Height = Dimensions.get('screen').height;
-// import styles from './styles';
-import { LinearGradient } from 'expo-linear-gradient';
-import { RFValue } from 'react-native-responsive-fontsize';
+import { View, Text } from 'react-native';
 import Header from './Header/index';
 import CheckBox from './CheckBox/index'
-class index extends Component {
-	constructor(props) {
+class index extends Component
+{
+	constructor(props)
+	{
 		super(props);
 		this.state = {};
 	}
-	render() {
+	render()
+	{
+		const { navigation } = this.props;
 		return (
-		<>
-			{/* <StatusBar
-			animated={true}
-			backgroundColor="#722f8c"
-		
-			/> */}
+			<View style={styles.container}>
 
-	   
-			 <Header />
-            <CheckBox/>
-			     
-	
+				<View style={styles.mainContainer}>
+					<View style={styles.headerContainer}>
+						<Header navigation={navigation} />
+					</View>
+					<View style={styles.CheckBoxContainer}>
+						<CheckBox />
+					</View>
+				</View>
 
-			</>
+			</View>
 		);
 	}
 }
 
 export default index;
-
-const styles = StyleSheet.create({
-	
-});

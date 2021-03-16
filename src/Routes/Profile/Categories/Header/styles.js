@@ -11,11 +11,11 @@ const styles = StyleSheet.create({
 		left: 0,
 		right: 0,
 		top: 0,
-		height: Height * 0.25
+		height: Height * 0.25,
 	},
 	button: {
 		padding: 15,
-	  alignItems: 'center',
+		alignItems: 'center',
 		borderRadius: 5
 	},
 	text: {
@@ -36,11 +36,11 @@ const styles = StyleSheet.create({
 	},
 	leftArrowContainerView: {
 		flexDirection: 'row',
-	   justifyContent: 'center',
+		justifyContent: 'center',
 	},
 	leftArrowStyle: {
-		width: Width * 0.05,
-		height: Height * 0.04
+		width: Width * 0.03,
+		height: Height * 0.04,
 	},
 	replayTemplatesStyle: {
 		fontSize: 18,
@@ -50,7 +50,21 @@ const styles = StyleSheet.create({
 		width: Width * 0.04,
 		height: Height * 0.03,
 		marginTop: Height * 0.009
-	}
+	},
+	categoriesAndTaskStyles: {
+		paddingHorizontal: Width * 0.16,
+		fontSize: RFValue(22),
+		color: '#fff'
+	},
+	headerTextContainer: {
+		alignSelf: 'center',
+		marginTop: 40,
+		width: Width * 0.7
+	},
+	headerTextStyle: {
+		color: '#fff',
+		textAlign:"center"
+	},
 });
 
 export default styles;
